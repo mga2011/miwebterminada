@@ -1,0 +1,73 @@
+
+
+// Colores
+$color-negro: black;
+$color-blanco: white;
+$color-rojo-oscuro: rgb(7, 1, 1);
+$color-rojo-claro: rgb(230, 17, 17);
+$color-marron: brown;
+$color-marron-hover: rgb(165, 42, 42);
+$color-fondo-html: rgb(242, 239, 239);
+$color-gris-claro: rgb(227, 222, 222);
+$color-gris-intermedio: rgb(203, 194, 194);
+$color-gris-oscuro: rgb(214, 174, 174);
+$color-blanco-azulado: aliceblue;
+$color-blanco-rojo: rgb(240, 233, 235);
+$color-rojo-intenso: red;
+$color-tomate: tomato;
+$color-info-claro: #007bff;
+$color-info-hover: #0056b3;
+$color-fondo-grid: rgba(0, 0, 0, 0.4);
+$color-fondo-formulario: rgba(0, 0, 0, 0.6);
+$color-sombra-clara: rgba(252, 248, 248, 0.56);
+$color-blanco-suave: rgb(233, 221, 224);
+$color-purpura-claro: rgb(205, 83, 207);
+$color-naranja-claro: rgb(211, 126, 44);
+$color-naranja-oscuro: rgb(217, 56, 28);
+$color-amarillo-claro: rgb(237, 221, 83);
+$color-rosado-grisaceo: rgb(210, 206, 206);
+$color-claro: rgb(252, 238, 238);
+
+// Fuentes
+$font-lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font-arial: Arial, Helvetica, sans-serif;
+$font-times: 'Times New Roman', Times, serif;
+$font-gill-sans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-verdana: Verdana, Geneva, Tahoma, sans-serif;
+$font-initial: initial;
+
+
+$font-size-base: 1.6rem;
+$font-size-small: 1.4rem;
+$font-size-medium: 1.8rem;
+$font-size-large: 2.0rem;
+$font-size-h3: 2.2rem;
+$font-size-h2: 3.5rem;
+$font-size-h1: 8rem; 
+$font-size-titulo-principal: 5rem;
+$font-size-grid-titulo: 7rem;
+$font-size-grid-subtitulo: 3.8rem;
+$font-size-precio-h1: 6rem;
+$font-size-precio-h2: 5rem;
+$font-size-precio-h3: 3rem;
+
+// Espaciado
+$spacing-xxs: 0.5rem;
+$spacing-xs: 1rem;
+$spacing-s: 1.5rem;
+$spacing-m: 2rem;
+$spacing-l: 3rem;
+$spacing-xl: 4rem;
+$spacing-xxl: 5rem;
+
+// Border Radius
+$border-radius-small: 0.5rem;
+$border-radius-medium: 1rem;
+$border-radius-large: 2rem;
+$border-radius-xl: 3rem;
+
+// Box Shadow
+$box-shadow-default: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+// Transiciones
+$transition-ease: 0.3s ease;

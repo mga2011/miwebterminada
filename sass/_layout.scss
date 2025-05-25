@@ -1,0 +1,86 @@
+
+
+@import 'variables';
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "subtitulo2 subtitulo2 subtitulo2"
+        "parrafo parrafo parrafo"
+        "subtitulo3 subtitulo3 subtitulo3"
+        "listas imagen imagen"
+        "listas imagen imagen"
+        "parrafo2 imagen imagen";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: $spacing-l;
+    padding: $spacing-xl $spacing-m;
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: $color-fondo-grid;
+    border-radius: $border-radius-medium;
+
+    .grid-titulo {
+        grid-area: titulo;
+        color: $color-rojo-intenso;
+        font-family: $font-times;
+        font-size: $font-size-grid-titulo;
+        text-align: center;
+        padding-bottom: $spacing-m;
+    }
+
+    .grid-subtitulo {
+        grid-area: subtitulo2;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: $font-size-grid-subtitulo;
+        text-align: center;
+        color: $color-blanco;
+    }
+
+    .grid-parrafo {
+        grid-area: parrafo;
+        font-size: $font-size-large;
+        text-align: center;
+        padding: 0 $spacing-m;
+    }
+
+    .grid-subtitulo3 {
+        grid-area: subtitulo3;
+        font-size: $spacing-l;
+        text-align: center;
+        color: $color-blanco;
+        padding-top: $spacing-m;
+    }
+
+    .grid-listas {
+        grid-area: listas;
+        font-size: $font-size-medium; 
+        list-style: disc;
+        margin-left: $spacing-m;
+        padding: 0 $spacing-xs;
+        color: $color-blanco-suave;
+
+        li {
+            margin-bottom: $spacing-xs;
+        }
+    }
+
+    .grid-parrafo2 {
+        grid-area: parrafo2;
+        font-size: $font-size-large;
+        text-align: center;
+        padding: 0 $spacing-m;
+    }
+
+    img {
+        grid-area: imagen;
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius-medium;
+        box-shadow: -1.7rem -1.3rem 2.7rem -0.9rem $color-sombra-clara;
+        object-fit: cover;
+        max-height: 40rem;
+    }
+}

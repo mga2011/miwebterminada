@@ -1,0 +1,180 @@
+
+@import 'variables';
+
+main {
+    padding-bottom: $spacing-xxl; 
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.banner {
+    height: 30rem;
+    background-image: url(../datos/banner.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoomBanner 15s infinite alternate;
+    border-radius: $border-radius-xl;
+    margin: $spacing-l $spacing-m; 
+
+    h3 {
+        font-family: $font-lucida;
+        font-size: $spacing-l;
+        color: $color-rosado-grisaceo;
+        text-align: end;
+        padding: $spacing-s $spacing-l; 
+    }
+}
+
+@keyframes zoomBanner {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 140%;
+    }
+}
+
+.colorFondo { 
+    background-image: url(../datos/polo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: $spacing-m;
+    margin: $spacing-xs;
+    color: $color-blanco-rojo;
+    min-height: 70vh;
+    border-radius: $border-radius-xl;
+
+    h1 {
+        color: $color-gris-intermedio;
+        font-size: $font-size-titulo-principal; 
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-m;
+    }
+
+    h2 {
+        color: $color-blanco;
+        text-align: left;
+        text-decoration: underline;
+        font-size: $font-size-h2;
+        padding-top: $spacing-m;
+        padding-bottom: $spacing-xs;
+        margin-left: 6rem;
+    }
+
+    ul {
+        font-family: $font-verdana;
+        color: $color-blanco;
+        list-style: none;
+        text-align: left;
+        margin: $spacing-xxl $spacing-xxl;
+        padding-left: 3.5rem;
+        font-size: $font-size-h3;
+        line-height: 1.8;
+    }
+
+    p {
+        color: $color-blanco;
+        font-size: 2.5rem; 
+        text-align: center;
+        margin: $spacing-l auto;
+        max-width: 80rem;
+    }
+}
+
+.precio {
+    padding: $spacing-m;
+    margin: $spacing-m;
+    background: linear-gradient(62deg, $color-naranja-oscuro 8%, $color-naranja-claro 33%, $color-purpura-claro 81%, $color-amarillo-claro 95%);
+    color: $color-blanco;
+    border-radius: $border-radius-medium;
+
+    h1 {
+        text-align: center;
+        font-family: $font-times;
+        font-size: $font-size-precio-h1;
+        padding: $spacing-m;
+        margin-bottom: $spacing-l;
+        color: $color-gris-intermedio;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: $font-times;
+        font-size: $font-size-precio-h2;
+        padding: $spacing-m;
+        margin-bottom: $spacing-l;
+        color: $color-claro;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: $font-times;
+        font-size: $font-size-precio-h3;
+        padding: $spacing-m;
+        margin-top: $spacing-xl;
+        color: $color-blanco;
+    }
+
+    p {
+        font-family: $font-initial;
+        font-size: 2.5rem; 
+        text-align: center;
+        margin: $spacing-m auto;
+        max-width: 80rem;
+        padding: $spacing-xs;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        padding: 3.5rem;
+    }
+
+    button {
+        padding: $spacing-s $spacing-l;
+        font-size: $spacing-m;
+        background-color: $color-info-claro;
+        color: $color-blanco;
+        border: none;
+        border-radius: $border-radius-small;
+        cursor: pointer;
+        transition: background-color $transition-ease;
+
+        &:hover {
+            background-color: $color-info-hover;
+        }
+    }
+}
+
+.carousel-item {
+    img {
+        height: 30rem;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.mapa {
+    position: relative;
+    padding-bottom: 75%;
+    height: 30rem;
+    overflow: hidden;
+    max-width: 60rem;
+    margin: $spacing-l auto;
+    background-color: $color-negro;
+    border-radius: $border-radius-xl;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}

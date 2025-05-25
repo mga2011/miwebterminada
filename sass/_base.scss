@@ -1,0 +1,20 @@
+// scss/_base.scss
+
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-lucida;
+    font-size: 62.5%; /* 1rem = 10px, facilita el cálculo de tamaños */
+    background-color: $color-fondo-html;
+}
+
+body {
+    background-color: $color-negro;
+    color: $color-blanco;
+}

@@ -1,0 +1,89 @@
+
+@import 'variables';
+
+main {
+    h1 {
+        color: $color-gris-intermedio;
+        text-decoration: underline;
+        text-align: center;
+        font-family: $font-arial;
+        font-size: $font-size-h1;
+        padding: $spacing-xl $spacing-m;
+    }
+
+    h2 {
+        color: $color-rojo-claro;
+        text-decoration: none;
+        font-family: $font-arial;
+        font-size: $font-size-h2;
+        text-align: center;
+        padding: $spacing-m;
+        margin: 0;
+    }
+
+    h3 {
+        color: $color-blanco;
+        font-family: $font-arial;
+        font-size: $font-size-h3;
+        text-decoration: underline;
+        margin: $spacing-m;
+        text-align: center;
+        text-transform: uppercase;
+        padding: $spacing-l;
+    }
+
+    p {
+        color: $color-gris-oscuro;
+        font-family: $font-arial;
+        font-size: $font-size-large;
+        text-align: justify;
+        margin: $spacing-l;
+        padding: $spacing-l;
+        line-height: 1.6;
+    }
+}
+
+
+.titulo-Principal {
+    font-family: $font-arial;
+    font-size: $font-size-titulo-principal;
+    text-align: center;
+    padding-top: $spacing-xl;
+}
+
+.pologts {
+    color: $color-tomate;
+    font-family: $font-arial;
+    font-size: $font-size-large;
+    text-align: justify;
+    padding: $spacing-m;
+    max-width: 150rem;
+    margin: $spacing-xs auto;
+}
+
+
+div {
+    h1 {
+        color: $color-blanco;
+        font-family: $font-times;
+        font-size: 6rem; 
+        text-align: center;
+    }
+
+    h2 {
+        color: $color-blanco;
+        font-family: $font-times;
+        font-size: 4rem; 
+        text-align: center;
+    }
+
+    p {
+        color: $color-rojo-claro; 
+        font-family: $font-gill-sans;
+        font-size: 2.5rem; 
+        text-align: justify;
+        padding: $spacing-m;
+        max-width: 150rem;
+        margin: $spacing-m auto;
+    }
+}
