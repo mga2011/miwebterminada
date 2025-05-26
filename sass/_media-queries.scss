@@ -1,11 +1,9 @@
-
-
-@import 'variables';
+@import 'variables'; 
 
 
 @media (max-width: 375px) {
     html {
-        font-size: 50%; // Base 1rem = 5px
+        font-size: 50%; 
     }
 
     header {
@@ -32,24 +30,38 @@
             height: 18rem;
         }
     }
-    .banner 
+    .banner {
         h3 {
-            display: none; 
+            display: none;
+        }
+    }
+    .contenedor-grid {
+        .grid-titulo {
+            font-size: 3.5rem; 
         }
 
+        .grid-subtitulo,
+        .grid-subtitulo3 {
+            font-size: 2.2rem;
+        }
+    }
 }
 
+---
+
+// Small Devices (hasta 767px - Móviles y Tablets pequeñas)
 
 @media (max-width: 767px) {
     html {
-        font-size: 55%; 
+        font-size: 55%;
     }
 
     /* Header */
+
     header {
         flex-direction: column;
-        padding: $spacing-xs; 
-        position: static; 
+        padding: $spacing-xs;
+        position: static;
         align-items: flex-start;
 
         img {
@@ -64,22 +76,22 @@
 
             ul {
                 flex-direction: column;
-                gap: $spacing-xs; 
+                gap: $spacing-xs;
                 align-items: center;
                 width: 100%;
             }
 
             a {
-                font-size: $font-size-medium; 
-                padding: 0.8rem $spacing-s; 
-                margin: $spacing-xxs 0; 
+                font-size: $font-size-medium;
+                padding: 0.8rem $spacing-s;
+                margin: $spacing-xxs 0;
                 width: 90%;
                 text-align: center;
             }
         }
 
         h3 {
-            display: none; 
+            display: none;
         }
     }
 
@@ -93,38 +105,38 @@
 
     main {
         h1 {
-            font-size: $spacing-xl; 
-            padding: $spacing-m $spacing-xs; 
+            font-size: $spacing-xl;
+            padding: $spacing-m $spacing-xs;
         }
 
         h2 {
             font-size: 2.8rem;
             text-align: center;
-            padding: $spacing-s; 
+            padding: $spacing-s;
         }
 
         h3 {
-            font-size: $spacing-m; 
-            padding: $spacing-xs; 
-            margin: $spacing-s; 
+            font-size: $spacing-m;
+            padding: $spacing-xs;
+            margin: $spacing-s;
         }
 
         p {
             font-size: 1.7rem;
-            padding: $spacing-s; 
-            margin: $spacing-xs; 
+            padding: $spacing-s;
+            margin: $spacing-xs;
             text-align: center;
         }
     }
 
     .titulo-Principal {
-        font-size: $spacing-l; 
+        font-size: $spacing-l;
     }
 
     .pologts {
         font-size: 1.6rem;
-        padding: $spacing-s; 
-        margin: $spacing-s auto; 
+        padding: $spacing-s;
+        margin: $spacing-s auto;
     }
 
     /* Galerías de fotos */
@@ -132,17 +144,17 @@
     .fotos {
         flex-direction: column;
         align-items: center;
-        padding: $spacing-xs; 
+        padding: $spacing-xs;
 
         img {
             width: 95%;
-            margin: $spacing-xxs 0; 
+            margin: $spacing-xxs 0;
             height: 20rem;
         }
     }
 
     .fotodiseños {
-        padding: $spacing-xs; 
+        padding: $spacing-xs;
 
         img {
             max-width: 95%;
@@ -156,46 +168,47 @@
     .mapa {
         padding-bottom: 70%;
         max-width: 95%;
-        margin: $spacing-s auto; 
+        margin: $spacing-s auto;
     }
 
     /* Sección Equipamiento  */
 
     .colorFondo {
-        padding: $spacing-s; 
+        padding: $spacing-s;
 
         h1 {
-            font-size: $spacing-l; 
-            padding-top: $spacing-m; 
-            padding-bottom: $spacing-xs; 
+            font-size: $spacing-l;
+            padding-top: $spacing-m;
+            padding-bottom: $spacing-xs;
         }
 
         h2 {
             font-size: 2.5rem;
-            padding-top: $spacing-s; 
-            padding-bottom: $spacing-xxs; 
+            padding-top: $spacing-s;
+            padding-bottom: $spacing-xxs;
             margin-left: 0;
             text-align: center;
         }
 
         ul {
-            margin: $spacing-xs $spacing-m; 
-            padding-left: $spacing-m; 
-            font-size: $font-size-medium; 
+            margin: $spacing-xs $spacing-m;
+            padding-left: $spacing-m;
+            font-size: $font-size-medium;
         }
 
         p {
             font-size: 1.7rem;
-            margin: $spacing-s auto; 
-            padding: $spacing-xs; 
+            margin: $spacing-s auto;
+            padding: $spacing-xs;
         }
     }
 
     /* Sección Diseño */
-    .texto-de-diseños { 
-        font-size: $font-size-medium; 
-        padding: $spacing-s; 
-        margin: $spacing-s auto; 
+
+    .texto-de-diseños {
+        font-size: $font-size-medium;
+        padding: $spacing-s;
+        margin: $spacing-s auto;
     }
 
     /* Motorización (contenedor-grid) */
@@ -211,70 +224,69 @@
             "parrafo2";
         grid-template-columns: 1fr;
         gap: $spacing-s;
-        padding: $spacing-m $spacing-s; 
+        padding: $spacing-m $spacing-s;
 
         .grid-titulo {
-            font-size: 4.5rem;
+            font-size: 2.5rem; 
         }
 
         .grid-subtitulo,
         .grid-subtitulo3 {
             font-size: 2.8rem;
-            padding: $spacing-xs; 
+            padding: $spacing-xs;
         }
 
         .grid-parrafo,
         .grid-parrafo2 {
-            font-size: $font-size-medium; 
-            padding: 0 $spacing-xs; 
+            font-size: $font-size-medium;
+            padding: 0 $spacing-xs;
         }
 
         .grid-listas {
             font-size: 1.7rem;
-            margin-left: $spacing-s; 
-            padding: 0 $spacing-xxs; 
+            margin-left: $spacing-s;
+            padding: 0 $spacing-xxs;
         }
 
         img {
             max-height: 25rem;
-            margin-top: $spacing-s; 
+            margin-top: $spacing-s;
         }
     }
 
     /* Sección Precios */
-
     .precio {
         h1 {
-            font-size: $spacing-xl; 
-            padding: $spacing-s; 
-            margin-bottom: $spacing-m; 
+            font-size: $spacing-xl;
+            padding: $spacing-s;
+            margin-bottom: $spacing-m;
         }
 
         h2 {
-            font-size: $spacing-l; 
-            padding: $spacing-xs; 
-            margin-bottom: $spacing-m; 
+            font-size: $spacing-l;
+            padding: $spacing-xs;
+            margin-bottom: $spacing-m;
         }
 
         h3 {
-            font-size: 2.2rem; 
-            padding: $spacing-xs; 
+            font-size: 2.2rem;
+            padding: $spacing-xs;
             margin-top: $spacing-l;
         }
 
         p {
             font-size: $font-size-medium;
             margin: $spacing-s auto;
-            padding: $spacing-xs; 
+            padding: $spacing-xs;
         }
 
         a {
-            padding: $spacing-m; 
+            padding: $spacing-m;
         }
 
         button {
-            padding: $spacing-xs $spacing-m; 
-            font-size: $font-size-medium; 
+            padding: $spacing-xs $spacing-m;
+            font-size: $font-size-medium;
         }
     }
 
@@ -285,14 +297,13 @@
     }
 
     /* Formulario */
-
     .formulario-email {
         max-width: 95%;
-        padding: $spacing-m; 
+        padding: $spacing-m;
 
         label {
-            font-size: $font-size-medium; 
-            margin-bottom: $spacing-xs; 
+            font-size: $font-size-medium;
+            margin-bottom: $spacing-xs;
         }
 
         .form-control {
@@ -301,16 +312,15 @@
         }
 
         .btn {
-            margin-top: $spacing-s; 
-            padding: $spacing-xs $spacing-m; 
-            font-size: $font-size-medium; 
+            margin-top: $spacing-s;
+            padding: $spacing-xs $spacing-m;
+            font-size: $font-size-medium;
         }
     }
 
     /* Footer */
-
     footer {
-        padding: $spacing-s 0; 
+        padding: $spacing-s 0;
 
         p {
             font-size: 1.4rem;
@@ -318,27 +328,28 @@
 
         .redes {
             img {
-                width: $spacing-xxl; 
-                height: $spacing-xxl; 
-                padding: $spacing-xxs; 
-                margin: $spacing-xxs; 
+                width: $spacing-xxl;
+                height: $spacing-xxl;
+                padding: $spacing-xxs;
+                margin: $spacing-xxs;
             }
         }
 
         .logoWp {
-            width: $spacing-xxl; 
-            bottom: $spacing-s; 
-            right: $spacing-s; 
+            width: $spacing-xxl;
+            bottom: $spacing-s;
+            right: $spacing-s;
         }
     }
 }
 
+---
 
-/* Medium Devices (hasta 1024px - Tablets) */
+// Medium Devices (hasta 1024px - Tablets)
 
 @media (max-width: 1024px) {
     html {
-        font-size: 58%; 
+        font-size: 58%;
     }
 
     header {
@@ -349,8 +360,8 @@
 
         nav {
             a {
-                font-size: $spacing-xs; 
-                padding: 0.8rem $spacing-s; 
+                font-size: $spacing-xs;
+                padding: 0.8rem $spacing-s;
                 border-radius: 2.5rem;
             }
 
@@ -362,25 +373,25 @@
 
     main {
         h1 {
-            font-size: 6rem;
+            font-size: 4.5rem;
         }
 
         h2 {
-            font-size: $spacing-l; 
+            font-size: $spacing-l;
         }
 
         h3 {
-            font-size: $spacing-m; 
+            font-size: $spacing-m;
         }
 
         p {
-            font-size: $font-size-medium; 
-            margin: $spacing-s; 
-            padding: $spacing-m; 
+            font-size: $font-size-medium;
+            margin: $spacing-s;
+            padding: $spacing-m;
         }
-        
+
         h3 {
-            display: none; 
+            display: none;
         }
     }
 
@@ -400,11 +411,11 @@
             "listas imagen"
             "parrafo2 imagen";
         grid-template-columns: 1fr 1fr;
-        gap: $spacing-m; 
-        padding: $spacing-l $spacing-s; 
+        gap: $spacing-m;
+        padding: $spacing-l $spacing-s;
 
         .grid-titulo {
-            font-size: 6rem;
+            font-size: 4.5rem;
         }
 
         .grid-subtitulo,

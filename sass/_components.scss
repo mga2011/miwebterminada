@@ -1,8 +1,11 @@
-// scss/_components.scss
 
 @import 'variables';
 
-.fotos { // Galería de fotos principal
+
+// Galería de fotos principal
+
+
+.fotos { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,7 +21,9 @@
     }
 }
 
-.fotodiseños { // Galería de fotos de diseños
+// Galería de fotos de diseños
+
+.fotodiseños { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,8 +34,8 @@
     padding: $spacing-m;
 
     img {
-        width: 500px; // Mantener px aquí si el diseño lo requiere, o convertir a rem.
-        height: 300px; // Mantener px aquí o convertir a rem.
+        width: 500px;
+        height: 300px;
         object-fit: cover;
         border-radius: $border-radius-medium;
         box-shadow: $box-shadow-default;
@@ -57,7 +62,3 @@
         border: 0;
     }
 }
-
-// Clases de Bootstrap, si las vas a personalizar, irían aquí.
-// .btn { /* ... */ }
-// .form-control { /* ... */ }
